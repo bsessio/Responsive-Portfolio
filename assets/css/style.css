@@ -14,12 +14,6 @@ body {
   clear: both;
 }
 
-.content {
-  width: 960px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 h1,
 h2,
 h3,
@@ -165,7 +159,8 @@ textarea {
 .about-img {
     float: left;
     margin: 0 30px 30px 0;
-    filter: grayscale(75%);
+    max-width: 100%;
+    height: auto;
 }
 
 a:hover {
@@ -185,6 +180,116 @@ button:hover {
     padding: 9px 19px;
 }
 
-.about-img:hover {
-    filter: none;
+@media (max-width: 640px) {
+  header, footer {
+    position: relative;
+  }
+
+ 
+  .greenbox {
+    position: relative;
+    float: none;
+    width: auto;
+    padding: 1.5em;
+    margin: 0;
+      }
+      
+  nav {
+    text-align: center;
+    font-size: 1em;
+    padding: 1em;
+  }
+      
+  header {
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .content {
+    max-width: 100%;
+    }
+  
+  main {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    max-width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .about-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    min-width: 100%;
+  }
+
+.portfolio {
+  position: relative;
+  width: 80%;
+  margin: 0 5% 5% 5%;
 }
+
+}
+
+@media (min-width: 641px) and (max-width: 959px) {
+
+  header {
+    width: 100%;
+  }
+
+.content {
+  max-width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+main {
+  margin-top: 15%;
+  margin-bottom: 15%;
+  max-width: 100%;
+}
+
+.portfolio {
+  position: relative;
+  width: 40%;
+  margin: 0 5% 5% 5%;
+}
+
+}
+
+@media (min-width: 959px) and (max-width: 990px) {
+
+  .content {
+    max-width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  
+  main {
+    margin-top: 15%;
+    margin-bottom: 15%;
+    max-width: 100%;
+  
+  }
+  
+  }
+
+  @media (min-width: 990px) {
+
+    .content {
+        max-width: 960px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    main {
+      margin-top: 10%;
+      margin-bottom: 5%;
+      max-width: 100%;
+    
+    }
+    
+    
+    }
